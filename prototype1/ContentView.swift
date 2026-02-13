@@ -126,6 +126,7 @@ struct ChatBubbleView: View {
                     .font(.body)
                     .foregroundStyle(message.role == .assistant ? Color.primary : Color.white)
                     .textSelection(.enabled)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 14)
                     .padding(.vertical, 11)
                 }
